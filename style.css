@@ -1,0 +1,107 @@
+
+/* Mengatur semua elemen */
+* {
+    margin: 0; /* Menghilangkan jarak luar */
+    padding: 0; /* Menghilangkan jarak dalam */
+}
+
+/* Mengatur tampilan halaman */
+body {
+    font-family: Arial; /* Mengatur jenis huruf */
+    background-color: #f2f5f7; /* Warna latar halaman */
+    color: #333; /* Warna tulisan */
+}
+
+/* Mengatur bagian header */
+header {
+    background-color: #173f5f; /* Warna header */
+    color: white; /* Warna tulisan */
+    padding: 20px; /* Jarak dalam header */
+    display: flex; /* Membuat isi berjajar */
+    justify-content: space-between; /* Memisahkan logo dan menu */
+}
+
+/* Mengatur menu */
+nav a {
+    color: white; /* Warna tulisan menu */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    margin-left: 15px; /* Jarak antar menu */
+}
+
+/* Efek saat menu disentuh */
+nav a:hover {
+    color: yellow; /* Mengubah warna menu */
+}
+
+/* Mengatur banner */
+.banner {
+    background-color: #285b7a; /* Warna banner */
+    color: white; /* Warna tulisan */
+    text-align: center; /* Tulisan di tengah */
+    padding: 70px 20px; /* Jarak dalam banner */
+}
+
+/* Mengatur judul banner */
+.banner h1 {
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+/* Mengatur isi website */
+.container {
+    width: 85%; /* Lebar isi halaman */
+    margin: auto; /* Membuat posisi di tengah */
+}
+
+/* Mengatur setiap bagian */
+section {
+    margin-top: 30px; /* Jarak antar bagian */
+    margin-bottom: 30px; /* Jarak bawah */
+}
+
+/* Mengatur judul bagian */
+h2 {
+    color: #173f5f; /* Warna judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+/* Mengatur kotak teknik */
+.kartu {
+    background-color: white; /* Warna kotak */
+    padding: 20px; /* Jarak dalam kotak */
+    margin: 10px 0; /* Jarak antar kotak */
+    border-radius: 5px; /* Membuat sudut melengkung */
+}
+
+/* Mengatur judul kartu */
+.kartu h3 {
+    color: #173f5f; /* Warna judul kartu */
+}
+
+/* Mengatur daftar aturan */
+ul {
+    padding-left: 25px; /* Jarak daftar dari kiri */
+}
+
+/* Mengatur bagian footer */
+footer {
+    background-color: #173f5f; /* Warna footer */
+    color: white; /* Warna tulisan */
+    text-align: center; /* Tulisan di tengah */
+    padding: 20px; /* Jarak dalam footer */
+}
+
+/* Mengatur tampilan di HP */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Header tersusun ke bawah */
+        gap: 10px; /* Jarak logo dan menu */
+    }
+
+    nav a {
+        margin: 5px; /* Mengatur jarak menu */
+    }
+
+    .container {
+        width: 90%; /* Lebar isi di HP */
+    }
+}
